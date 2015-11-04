@@ -1,0 +1,14 @@
+table{
+	font-size: 15px;
+}
+
+span{
+	color: rgb(0,172,200);
+}
+
+ul li{
+	list-style-type: none;
+}
+.glyphicon-menu-left, .glyphicon-menu-right{
+	color: rgb(0,172,200);
+}

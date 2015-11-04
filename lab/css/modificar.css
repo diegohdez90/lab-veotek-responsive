@@ -1,0 +1,46 @@
+body{
+	background-color: rgb(0,172,200);
+}
+
+.header, .modificar, .menu{
+	background-color: white;
+	margin: 40px 0;
+}
+
+.menu{
+	padding: 20px;
+}
+
+.modificar{
+	padding: 25px;
+}
+
+.menu li{
+	padding: 8px;
+}
+
+.modificar, .menu{
+	height: 700px;
+}
+
+span{
+	color: rgb(0,172,200);
+}
+
+a{
+	color: rgb(0,172,200);
+}
+
+a:link, a:visited, a:hover, a:active span{
+	color: rgb(0,172,200);
+}
+
+.error{
+	background-color: white;
+}
+
+.error img{
+	width: 50%;
+	display:block;
+    margin:auto;
+}

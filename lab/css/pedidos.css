@@ -1,0 +1,12 @@
+body{
+	background-color: rgb(0,172,200);
+}
+
+.header, .pedidos, .menu{
+	background-color: white;
+	margin: 20px 0;
+}
+
+.pedidos{
+	padding: 20px;
+}
