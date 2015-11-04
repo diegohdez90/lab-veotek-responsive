@@ -4,12 +4,11 @@
 <link rel="stylesheet" type="text/css" href="css/lab.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/informes.css">
-<link rel="stylesheet" href="css/articles-print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="css/print-report.css" type="text/css" media="print" />
 <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="js/lab.js"></script>
-<script src="js/chart.js"></script>
 
 </head>
 
@@ -82,7 +81,7 @@ echo'			<img width="100%" align="center" src="../img/veotek-lab.png">
 	       				echo "<tr><td>Ranurados</td><td>".$row['Ranurados']."</td></tr>";
 	       			}
 
-	       			$query_armazon_3piezas = "select count(*) as 3Piezas from pedido where armazon = '3piezas' and fecha='$fecha'";
+	       			$query_armazon_3piezas = "select count(*) as 3Piezas from pedido where armazon = '3 piezas' and fecha='$fecha'";
 	       			$ar_3piezas = mysql_query($query_armazon_3piezas,$con);
 	       			while ($row = mysql_fetch_array($ar_3piezas)) {
 	       				echo "<tr><td>3 Piezas</td><td>".$row['3Piezas']."</td></tr>";
@@ -346,7 +345,7 @@ echo'			<img width="100%" align="center" src="../img/veotek-lab.png">
 		                        Entradas</p>
 							</li>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-log-out" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="baja.php"><span class="glyphicon glyphicon-log-out" style="font-size:88px;"></span></a><br>
 		                        Salidas</p>
 							</li>
 						</ul>
@@ -354,20 +353,24 @@ echo'			<img width="100%" align="center" src="../img/veotek-lab.png">
 					<div class="col-md-6">
 						<ul>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-refresh" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="modificar.php"><span class="glyphicon glyphicon-refresh" style="font-size:88px;"></span></a><br>
 		                        Modificar</p>
 							</li>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-list-alt" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="pedidos.php"><span class="glyphicon glyphicon-list-alt" style="font-size:88px;"></span></a><br>
 		                        Pedidos</p>
 							</li>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-folder-open" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="informes.php"><span class="glyphicon glyphicon-folder-open" style="font-size:88px;"></span></a><br>
 		                        Informes</p>
 							</li>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-search" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="busqueda.php"><span class="glyphicon glyphicon-search" style="font-size:88px;"></span></a><br>
 		                        Busqueda</p>
+							</li>
+							<li>
+								<p class="text-center"><span onclick="window.print()" class="glyphicon glyphicon-print" style="font-size:88px;"></span></a><br>
+		                        Imprimir</p>
 							</li>
 						</ul>
 					</div>
@@ -375,10 +378,11 @@ echo'			<img width="100%" align="center" src="../img/veotek-lab.png">
 			</div>
 		</div>
 
-		<div class="row"><br>
-				<p>Numero de Pedidos <?php echo $num_total_registros;?></p>
-				<p>En cada pagina se muentra <?php echo $TAMANO_PAGINA ;?> pedidos</p>
-				<p>pagina <?php echo $pagina ;?> de <?php echo $total_paginas ;?> paginas</p><br>
+		<div class="row footer"><br>
+				<p class="text-center">Numero de Pedidos <?php echo $num_total_registros;?></p>
+				<p class="text-center">En cada pagina se muentra <?php echo $TAMANO_PAGINA ;?> pedidos</p>
+				<p class="text-center">pagina <?php echo $pagina ;?> de <?php echo $total_paginas ;?> paginas</p><br>
+				<p  class="text-center">
 				<?php
 					if ($total_paginas > 1) {
 						if ($pagina != 1)
@@ -397,6 +401,7 @@ echo'			<img width="100%" align="center" src="../img/veotek-lab.png">
 					}
 				}
 				?>
+			</p>
 			</div>
 
 	</div>

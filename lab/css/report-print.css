@@ -2,10 +2,10 @@
   body * {
     visibility: hidden;
   }
-  .articles, .articles * {
+  .reports, .reports * {
     visibility: visible;
   }
-  .articles {
+  .reports {
     position: absolute;
     left: 0;
     top: 0;

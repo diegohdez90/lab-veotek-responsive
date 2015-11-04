@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="css/lab.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/informes.css">
-<link rel="stylesheet" href="css/articles-print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="css/report-print.css" type="text/css" media="print" />
 <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
@@ -48,17 +48,19 @@ echo'			<img width="100%" align="center" src="../img/veotek-lab.png">
 
 
 
-				<div style="width: 75%">
+				<div class="reports"style="width: 100%">
+					<img width="100%" src="../img/veotek-lab.png">
+					<h3 class="text-center">Reparaciones en los &uacute;ltimas d&iacute;as</h3>
 					<canvas id="canvas" height="249" width="600"></canvas>
 				</div>
 					<?php
-							$sdatea=date("Y")."-".date("m")."-".date("d");
-							$sdateb=date("Y")."-".date("m")."-".(date("d")-1);
-							$sdatec=date("Y")."-".date("m")."-".(date("d")-2);
-							$sdated=date("Y")."-".date("m")."-".(date("d")-3);
-							$sdatee=date("Y")."-".date("m")."-".(date("d")-4);
-							$sdatef=date("Y")."-".date("m")."-".(date("d")-5);
-							$sdateg=date("Y")."-".date("m")."-".(date("d")-6);
+							$sdatea=date("Y-m-d");
+							$sdateb=date("Y-m-d",strtotime("-1 days"));
+							$sdatec=date("Y-m-d",strtotime("-2 days"));
+							$sdated=date("Y-m-d",strtotime("-3 days"));
+							$sdatee=date("Y-m-d",strtotime("-4 days"));
+							$sdatef=date("Y-m-d",strtotime("-5 days"));
+							$sdateg=date("Y-m-d",strtotime("-6 days"));
 
 					?>
 								
@@ -160,9 +162,9 @@ echo'			<img width="100%" align="center" src="../img/veotek-lab.png">
 			</script>
 
 
-			<a href="informes-fecha.php"><button type="submit" class="btn btn-default">Informes por fechas</button></a>
-
-			<a href="informes-tecnicos.php"><button type="submit" class="btn btn-default">Informes por t&eacute;cnicos</button></a>
+			<a href="informes-fecha.php"><button  type="submit" class="btn btn-default form-control">Informes por fechas</button></a>
+			<br><br>
+			<a href="informes-tecnico.php"><button  type="submit" class="btn btn-default form-control">Informes por t&eacute;cnicos</button></a>
 
 
 
@@ -185,7 +187,7 @@ echo'			<img width="100%" align="center" src="../img/veotek-lab.png">
 		                        Entradas</p>
 							</li>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-log-out" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="baja.php"><span class="glyphicon glyphicon-log-out" style="font-size:88px;"></span></a><br>
 		                        Salidas</p>
 							</li>
 						</ul>
@@ -193,20 +195,24 @@ echo'			<img width="100%" align="center" src="../img/veotek-lab.png">
 					<div class="col-md-6">
 						<ul>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-refresh" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="modificar.php"><span class="glyphicon glyphicon-refresh" style="font-size:88px;"></span></a><br>
 		                        Modificar</p>
 							</li>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-list-alt" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="pedidos.php"><span class="glyphicon glyphicon-list-alt" style="font-size:88px;"></span></a><br>
 		                        Pedidos</p>
 							</li>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-folder-open" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="informes.php"><span class="glyphicon glyphicon-folder-open" style="font-size:88px;"></span></a><br>
 		                        Informes</p>
 							</li>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-search" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="busqueda.php"><span class="glyphicon glyphicon-search" style="font-size:88px;"></span></a><br>
 		                        Busqueda</p>
+							</li>
+							<li>
+								<p class="text-center"><span onclick="window.print()" class="glyphicon glyphicon-print" style="font-size:88px;"></span></a><br>
+		                        Imprimir</p>
 							</li>
 						</ul>
 					</div>

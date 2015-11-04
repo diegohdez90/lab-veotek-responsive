@@ -1,7 +1,33 @@
+body{
+	background-color: rgb(0,172,200);
+}
 
-
-
-#canvas{
+.header, .informes, .menu, .footer{
+	background-color: white;
 	margin: 20px 0;
 }
 
+.informes{
+	padding: 20px;
+}
+
+.menu{
+	padding: 26px;
+}
+
+.reports{
+	margin: 20px 0;
+}
+
+.informes-fecha, .informes-tecnicos{
+	height: 114.6%;
+	padding: 40px;
+}
+
+.glyphicon-print{
+	cursor: pointer;
+}
+
+table{
+	font-size: 11px;
+}

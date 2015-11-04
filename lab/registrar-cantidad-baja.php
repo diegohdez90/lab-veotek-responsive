@@ -4,7 +4,6 @@
 <link rel="stylesheet" type="text/css" href="css/lab.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/baja.css">
-<link rel="stylesheet" href="css/articles-print.css" type="text/css" media="print" />
 <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="../js/bootstrap.min.	js"></script>
@@ -125,7 +124,7 @@ echo'			<img width="100%" align="center" src="../img/veotek-lab.png">
 		                        Entradas</p>
 							</li>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-log-out" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="baja.php"><span class="glyphicon glyphicon-log-out" style="font-size:88px;"></span></a><br>
 		                        Salidas</p>
 							</li>
 						</ul>
@@ -133,19 +132,19 @@ echo'			<img width="100%" align="center" src="../img/veotek-lab.png">
 					<div class="col-md-6">
 						<ul>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-refresh" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="modificar.php"><span class="glyphicon glyphicon-refresh" style="font-size:88px;"></span></a><br>
 		                        Modificar</p>
 							</li>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-list-alt" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="pedidos.php"><span class="glyphicon glyphicon-list-alt" style="font-size:88px;"></span></a><br>
 		                        Pedidos</p>
 							</li>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-folder-open" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="informes.php"><span class="glyphicon glyphicon-folder-open" style="font-size:88px;"></span></a><br>
 		                        Informes</p>
 							</li>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-search" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="busqueda.php"><span class="glyphicon glyphicon-search" style="font-size:88px;"></span></a><br>
 		                        Busqueda</p>
 							</li>
 						</ul>

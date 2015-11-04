@@ -108,11 +108,11 @@ echo '
 	                    <!--/carousel-inner-->
 	                </div><!--/myCarousel-->
 	                <a class="left carousel-control" href="#eventCarousel" data-slide="prev">
-	                        	<span class="glyphicon glyphicon glyphicon-menu-left" style="font-size:25px;"></span>
-	                        </a>
-	                        <a class="right carousel-control" href="#eventCarousel" data-slide="next">
-	                        	<span class="glyphicon glyphicon glyphicon-menu-right" style="font-size:25px;"></span>
-	                        </a>
+                    	<span class="glyphicon glyphicon glyphicon-menu-left" style="font-size:25px;"></span>
+                    </a>
+                    <a class="right carousel-control" href="#eventCarousel" data-slide="next">
+                    	<span class="glyphicon glyphicon glyphicon-menu-right" style="font-size:25px;"></span>
+                    </a>
 	            </div><!--/well-->
 	        </div>
 		</div>

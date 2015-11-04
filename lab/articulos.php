@@ -97,39 +97,39 @@ echo'			<img width="100%" align="center" src="../img/veotek-lab.png">
 			<div class="col-md-2 menu">
 				<ul>
 					<li>
-						<p class="text-center"><a href="index.php"><span class="glyphicon glyphicon-home" style="font-size:88px;"></span></a>
+						<p class="text-center"><a href="index.php"><span class="glyphicon glyphicon-home" style="font-size:88px;"></span></a><br>
 						Home</p>
 					</li>
 					<li>
-						<p class="text-center"><a href="articulos.php"><span class="glyphicon glyphicon-file" style="font-size:88px;"></span></a>
+						<p class="text-center"><a href="articulos.php"><span class="glyphicon glyphicon-file" style="font-size:88px;"></span></a><br>
 						Articulos</p>
 					</li>
 					<li>
-						<p class="text-center"><a href="alta.php"><span class="glyphicon glyphicon-log-in" style="font-size:88px;"></span></a>
+						<p class="text-center"><a href="alta.php"><span class="glyphicon glyphicon-log-in" style="font-size:88px;"></span></a><br>
                         Entradas</p>
 					</li>
 					<li>
-						<p class="text-center"><span class="glyphicon glyphicon-log-out" style="font-size:88px;"></span>
+						<p class="text-center"><a href="baja.php"><span class="glyphicon glyphicon-log-out" style="font-size:88px;"></span></a><br>
                         Salidas</p>
 					</li>
 					<li>
-						<p class="text-center"><span class="glyphicon glyphicon-refresh" style="font-size:88px;"></span>
+						<p class="text-center"><a href="modificar.php"><span class="glyphicon glyphicon-refresh" style="font-size:88px;"></span></a><br>
                         Modificar</p>
 					</li>
 					<li>
-						<p class="text-center"><span class="glyphicon glyphicon-list-alt" style="font-size:88px;"></span>
+						<p class="text-center"><a href="pedidos.php"><span class="glyphicon glyphicon-list-alt" style="font-size:88px;"></span></a><br>
                         Pedidos</p>
 					</li>
 					<li>
-						<p class="text-center"><span class="glyphicon glyphicon-folder-open" style="font-size:88px;"></span>
+						<p class="text-center"><a href="informes.php"><span class="glyphicon glyphicon-folder-open" style="font-size:88px;"></span></a><br>
                         Informes</p>
 					</li>
 					<li>
-						<p class="text-center"><span class="glyphicon glyphicon-search" style="font-size:88px;"></span>
+						<p class="text-center"><a href="busqueda.php"><span class="glyphicon glyphicon-search" style="font-size:88px;"></span></a><br>
                         Busqueda</p>
 					</li>
 					<li>
-						<p class="text-center"><span class="glyphicon glyphicon-print" style="font-size:88px;"></span>
+						<p class="text-center"><span onclick="window.print()" class="glyphicon glyphicon-print" style="font-size:88px;"></span>
                         Imprimir</p>
 					</li>
 				</ul>

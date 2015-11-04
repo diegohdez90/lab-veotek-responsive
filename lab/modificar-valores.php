@@ -110,7 +110,7 @@ echo'			<img width="100%" align="center" src="../img/veotek-lab.png">
 		                        Entradas</p>
 							</li>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-log-out" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="baja.php"><span class="glyphicon glyphicon-log-out" style="font-size:88px;"></span></a><br>
 		                        Salidas</p>
 							</li>
 						</ul>
@@ -118,19 +118,19 @@ echo'			<img width="100%" align="center" src="../img/veotek-lab.png">
 					<div class="col-md-6">
 						<ul>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-refresh" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="modificar.php"><span class="glyphicon glyphicon-refresh" style="font-size:88px;"></span></a><br>
 		                        Modificar</p>
 							</li>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-list-alt" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="pedidos.php"><span class="glyphicon glyphicon-list-alt" style="font-size:88px;"></span></a><br>
 		                        Pedidos</p>
 							</li>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-folder-open" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="informes.php"><span class="glyphicon glyphicon-folder-open" style="font-size:88px;"></span></a><br>
 		                        Informes</p>
 							</li>
 							<li>
-								<p class="text-center"><span class="glyphicon glyphicon-search" style="font-size:88px;"></span><br>
+								<p class="text-center"><a href="busqueda.php"><span class="glyphicon glyphicon-search" style="font-size:88px;"></span></a><br>
 		                        Busqueda</p>
 							</li>
 						</ul>

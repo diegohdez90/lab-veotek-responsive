@@ -20,3 +20,10 @@ body{
 	height: 630px;
 }
 
+.glyphicon-print{
+	cursor: pointer;
+}
+
+.busqueda-tecnica{
+	height: 3100px;
+}
